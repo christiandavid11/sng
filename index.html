@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f8e9e7">
+    <meta name="description" content="A little video and a special invitation for Linyl.">
+    <title>A Little Something for Linyl</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="love-letter">
+      <div class="top-heart" aria-hidden="true">♥</div>
+      <header class="intro">
+        <p class="eyebrow">A little something, just for you</p>
+        <h1>For <span>Linyl</span></h1>
+      </header>
+
+      <div class="video-frame">
+        <video id="intro-video" controls playsinline preload="metadata" aria-label="A special video for Linyl">
+          <source src="assets/invi.webm" type="video/webm">
+          Sorry, your browser doesn't support embedded videos.
+        </video>
+      </div>
+      <p class="watch-note"><span aria-hidden="true">♡</span> I'm really hoping you will say yes. <span aria-hidden="true">♡</span></p>
+
+      <section id="invitation" class="invitation" hidden aria-live="polite">
+        <div class="ornament" aria-hidden="true"><span>✦</span> <span>♡</span> <span>✦</span></div>
+        <p class="eyebrow">And now, one little question...</p>
+        <h2 id="invitation-question" tabindex="-1">Linyl, would you please go out on a date with me this November 14 and 15?</h2>
+        <div class="answer-buttons" id="answer-buttons">
+          <button class="answer-button answer-button-yes" id="yes-button" type="button">Yes, I'd love to! <span aria-hidden="true">♥</span></button>
+          <button class="answer-button answer-button-no" id="no-button" type="button">No, thank you</button>
+        </div>
+        <p id="answer-response" class="answer-response" role="status" aria-live="polite" hidden></p>
+      </section>
+
+      <dialog id="reaction-dialog" class="reaction-dialog" aria-labelledby="reaction-title">
+        <button id="close-reaction" class="close-reaction" type="button" aria-label="Close popup">×</button>
+        <img id="reaction-gif" class="reaction-gif" alt="">
+        <h2 id="reaction-title" class="reaction-title"></h2>
+        <p id="reaction-status" class="reaction-status" role="status" aria-live="polite"></p>
+      </dialog>
+
+      <footer><span aria-hidden="true">♡</span></footer>
+    </main>
+  </body>
+</html>
